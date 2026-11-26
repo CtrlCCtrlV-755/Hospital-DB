@@ -8,3 +8,10 @@ id INT AUTO_INCREMENT PRIMARY KEY,
 
     
     );
+
+CREATE TABLE Sala_de_emergencia  (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    numero INT NOT NULL,
+    bloco INT NOT NULL,
+    status BOOLEAN DEFAULT 1  NOT NULL
+    );
