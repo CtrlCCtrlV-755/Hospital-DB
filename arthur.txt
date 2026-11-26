@@ -58,4 +58,9 @@ CREATE TABLE quartos (
         status BOOLEAN DEFAULT 1
         );
         
-
+	CREATE TABLE cantina (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        lote VARCHAR(50) NOT Null UNIQUE,
+        FOREIGN KEY (id) REFERENCES estoque_alimentos(id),
+        FOREIGN KEY (id) REFERENCES funcionarios(id)
+        );
