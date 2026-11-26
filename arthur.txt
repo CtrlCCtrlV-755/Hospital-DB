@@ -24,4 +24,10 @@
         status BOOLEAN DEFAULT 1
         );
 
+	CREATE TABLE convenios(
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        cpf_paciente VARCHAR(11) UNIQUE NOT NULL,
+        tipo_convenio VARCHAR(100),
+        tempo_convenio DATETIME
+        );
  
