@@ -9,9 +9,21 @@ id INT AUTO_INCREMENT PRIMARY KEY,
     
     );
 
-CREATE TABLE Sala_de_emergencia  (
-	id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE sala_emergencia(
+    
+    id INT AUTO_INCREMENT PRIMARY KEY,
     numero INT NOT NULL,
+    FOREIGN KEY (id) REFERENCES funcionarios(id),
     bloco INT NOT NULL,
-    status BOOLEAN DEFAULT 1  NOT NULL
+    status BOOLEAN DEFAULT 1 NOT NULL 
+    
+    );
+
+
+CREATE TABLE estoque_remedios(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    quantidade INT NOT NULL,
+    status BOOLEAN DEFAULT 1
+    
+    
     );
