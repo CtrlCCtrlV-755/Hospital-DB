@@ -102,24 +102,6 @@ INSERT INTO funcionarios ( nome, idade, cpf, telefone)
 VALUES ('Ricardo Santos', '31', '37326485213', '4137247153');
 
 
-tabela: expediente_funcionarios
 
-INSERT INTO Expediente_funcionarios (cpf_funcionario, entrada, saida)
-VALUES ('Alberto Silva', '06:30', '18:30');
-
-INSERT INTO Expediente_funcionarios (cpf_funcionario, entrada, saida)
-VALUES ('Roberto da Luz', '07:30', '19:30');
-
-INSERT INTO Expediente_funcionarios (cpf_funcionario, entrada, saida)
-VALUES ('Leonardo Pereira', '12:30', '00:30');
-
-INSERT INTO Expediente_funcionarios (cpf_funcionario, entrada, saida)
-VALUES ('Matheus Oliveira', '09:45', '21:45');
-
-INSERT INTO Expediente_funcionarios (cpf_funcionario, entrada, saida)
-VALUES ('José Almeida', '08:00', '20:00');
-
-INSERT INTO Expediente_funcionarios (cpf_funcionario, entrada, saida)
-VALUES ('Ricardo Santos', '06:30', '18:30');
 
         
