@@ -69,5 +69,15 @@ CREATE TABLE quartos (
         data_saida DATETIME NOT NULL
         );
 
+	CREATE TABLE maternidade (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        FOREIGN KEY (id) REFERENCES pacientes(id),
+        FOREIGN KEY (id) REFERENCES funcionarios(id),
+        data_hora_parto DATETIME NOT NULL,
+        tipo_parto VARCHAR(50) NOT NULL,
+        semanas_gestacao INT NOT NULL
+        );
+
+        
 
         
