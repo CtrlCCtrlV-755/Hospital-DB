@@ -9,9 +9,71 @@ id INT AUTO_INCREMENT PRIMARY KEY,
     
     );
 
-CREATE TABLE Sala_de_emergencia  (
-	id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE sala_emergencia(
+    
+    id INT AUTO_INCREMENT PRIMARY KEY,
     numero INT NOT NULL,
+    FOREIGN KEY (id) REFERENCES funcionarios(id),
     bloco INT NOT NULL,
-    status BOOLEAN DEFAULT 1  NOT NULL
+    status BOOLEAN DEFAULT 1 NOT NULL 
+    
+    );
+
+
+CREATE TABLE estoque_remedios(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    quantidade INT NOT NULL,
+    status BOOLEAN DEFAULT 1
+    
+    
+    );
+
+CREATE TABLE consultórios_medicos(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    bloco INT NOT NULL,
+    numero INT NOT NULL UNIQUE,
+    FOREIGN KEY (id) REFERENCES funcionarios(id)
+    );
+
+CREATE TABLE farmacia(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    lote VARCHAR(50) NOT NULL UNIQUE,
+    FOREIGN KEY (id) REFERENCES estoque_remedios(id),
+	FOREIGN KEY (id) REFERENCES funcionarios (id),
+	quantidade INT NOT NULL,
+	data_validade DATE NOT NULL,
+	controlado BOOLEAN DEFAULT 1 
+
+
+
+
+
+);
+
+CREATE TABLE estoque_alimentos(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    quantidade INT NOT NULL,
+    status BOOLEAN DEFAULT 1,
+    data_validade DATE NOT NULL
+    
+    );
+
+CREATE TABLE registro_consulta(
+   
+	id INT AUTO_INCREMENT PRIMARY KEY,
+   	FOREIGN KEY (id) REFERENCES pacientes(id),
+    FOREIGN KEY (id) REFERENCES funcionarios(id),
+    FOREIGN KEY (id) REFERENCES sala_emergencia(id),
+    registro VARCHAR(1000),
+    bloco INT NOT NULL
+ 
+    
+    );
+CREATE TABLE sala_raio_x(
+    
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    numero INT NOT NULL UNIQUE,
+    bloco INT NOT NULL UNIQUE,
+    FOREIGN KEY (id) REFERENCES pacientes(id),
+    FOREIGN KEY (id) REFERENCES funcionarios(id)
     );
