@@ -1,0 +1,9 @@
+CREATE TABLE procedimentos ( id INT AUTO_INCREMENT, nome VARCHAR(100) NOT NULL, FOREIGN KEY (id) REFERENCES pacientes (id), FOREIGN KEY (id) REFERENCES funcionarios (id), numero_sala INT NOT NULL );
+
+
+CREATE TABLE ambulancias (
+id INT AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    FOREIGN KEY (id) REFERENCES funcionarios(id),
+    placa_veiculo INT NOT NULL
+);
