@@ -18,11 +18,6 @@
         ); 
 
 
-	CREATE TABLE estoque_alimentos(
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        quantidade INT NOT NULL,
-        status BOOLEAN DEFAULT 1
-        );
 
 CREATE TABLE estacionamento (
         id INT AUTO_INCREMENT PRIMARY KEY,
