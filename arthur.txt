@@ -79,6 +79,33 @@ CREATE TABLE maternidade (
         semanas_gestacao INT NOT NULL
         );
 
+<<<<<<< HEAD
+=======
+
+        tabela: funcionarios
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Alberto da Silva', '43', '15366633215', '4192465227');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Roberto da Luz', '36', '12246575922', '4116327314');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Leonardo Pereira', '28', '42683246674', '4142746163');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Matheus Oliveira', '35', '74618821585', '4173672725');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('José Almeida', '48', '37327582592', '4121527225');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Ricardo Santos', '31', '37326485213', '4137247153');
+
+
+
+        
+>>>>>>> 58b27bc74baf1c3f9bdac9f750d370e07bb30b0b
 
         CADASTRO DE INFORMAÇÕES
 
