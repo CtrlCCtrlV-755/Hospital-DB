@@ -57,3 +57,23 @@ CREATE TABLE estoque_alimentos(
     data_validade DATE NOT NULL
     
     );
+
+CREATE TABLE registro_consulta(
+   
+	id INT AUTO_INCREMENT PRIMARY KEY,
+   	FOREIGN KEY (id) REFERENCES pacientes(id),
+    FOREIGN KEY (id) REFERENCES funcionarios(id),
+    FOREIGN KEY (id) REFERENCES sala_emergencia(id),
+    registro VARCHAR(1000),
+    bloco INT NOT NULL
+ 
+    
+    );
+CREATE TABLE sala_raio_x(
+    
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    numero INT NOT NULL UNIQUE,
+    bloco INT NOT NULL UNIQUE,
+    FOREIGN KEY (id) REFERENCES pacientes(id),
+    FOREIGN KEY (id) REFERENCES funcionarios(id)
+    );
