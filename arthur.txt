@@ -45,3 +45,17 @@ CREATE TABLE filiais (
         status_hospitalares BOOLEAN DEFAULT 1,
         telefone_hospital VARCHAR(10) NOT NULL
         );
+
+CREATE TABLE quartos (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        numero INT NOT NULL,
+        bloco INT NOT NULL,
+        status BOOLEAN DEFAULT 1
+        );
+        
+	CREATE TABLE cantina (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        lote VARCHAR(50) NOT Null UNIQUE,
+        FOREIGN KEY (id) REFERENCES estoque_alimentos(id),
+        FOREIGN KEY (id) REFERENCES funcionarios(id)
+        );
