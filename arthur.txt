@@ -78,6 +78,28 @@ CREATE TABLE quartos (
         semanas_gestacao INT NOT NULL
         );
 
+
+        tabela: funcionarios
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Alberto da Silva', '43', '153.666.332.15', '41-9246-5227');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Roberto da Luz', '36', '122.465.759-22', '41-1632-7314');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Leonardo Pereira', '28', '426.832.466-74', '41-4274-6163');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Matheus Oliveira', '35', '746.188.215.85', '41-7367-2725');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('José Almeida', '48', '373.275.825.92', '41-2152-7225');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Ricardi Santos', '31', '373.264.852.13', '41-3724-7153');
+
+
         
 
         
