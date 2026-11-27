@@ -82,22 +82,23 @@ CREATE TABLE quartos (
         tabela: funcionarios
 
 INSERT INTO funcionarios ( nome, idade, cpf, telefone)
-VALUES ('Alberto da Silva', '43', '153.666.332.15', '41-9246-5227');
+VALUES ('Alberto da Silva', '43', '15366633215', '4192465227');
 
 INSERT INTO funcionarios ( nome, idade, cpf, telefone)
-VALUES ('Roberto da Luz', '36', '122.465.759-22', '41-1632-7314');
+VALUES ('Roberto da Luz', '36', '12246575922', '4116327314');
 
 INSERT INTO funcionarios ( nome, idade, cpf, telefone)
-VALUES ('Leonardo Pereira', '28', '426.832.466-74', '41-4274-6163');
+VALUES ('Leonardo Pereira', '28', '42683246674', '4142746163');
 
 INSERT INTO funcionarios ( nome, idade, cpf, telefone)
-VALUES ('Matheus Oliveira', '35', '746.188.215.85', '41-7367-2725');
+VALUES ('Matheus Oliveira', '35', '74618821585', '4173672725');
 
 INSERT INTO funcionarios ( nome, idade, cpf, telefone)
-VALUES ('José Almeida', '48', '373.275.825.92', '41-2152-7225');
+VALUES ('José Almeida', '48', '37327582592', '4121527225');
 
 INSERT INTO funcionarios ( nome, idade, cpf, telefone)
-VALUES ('Ricardi Santos', '31', '373.264.852.13', '41-3724-7153');
+VALUES ('Ricardo Santos', '31', '37326485213', '4137247153');
+
 
 
         
