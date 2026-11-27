@@ -46,21 +46,22 @@ CREATE TABLE filiais (
         telefone_hospital VARCHAR(10) NOT NULL
         );
 
-CREATE TABLE quartos (
+
+ CREATE TABLE quartos (
         id INT AUTO_INCREMENT PRIMARY KEY,
         numero INT NOT NULL,
         bloco INT NOT NULL,
-        status BOOLEAN DEFAULT 1
+        status_quarto BOOLEAN DEFAULT 1
         );
         
-	CREATE TABLE cantina (
+CREATE TABLE cantina (
         id INT AUTO_INCREMENT PRIMARY KEY,
         lote VARCHAR(50) NOT Null UNIQUE,
         FOREIGN KEY (id) REFERENCES estoque_alimentos(id),
         FOREIGN KEY (id) REFERENCES funcionarios(id)
         );
 
-	CREATE TABLE camara_mortuaria (
+CREATE TABLE camara_mortuaria (
         id INT AUTO_INCREMENT PRIMARY KEY,
         FOREIGN KEY (id) REFERENCES pacientes(id),
         numero_gaveta INT NOT NULL UNIQUE,
@@ -69,7 +70,7 @@ CREATE TABLE quartos (
         data_saida DATETIME NOT NULL
         );
 
-	CREATE TABLE maternidade (
+CREATE TABLE maternidade (
         id INT AUTO_INCREMENT PRIMARY KEY,
         FOREIGN KEY (id) REFERENCES pacientes(id),
         FOREIGN KEY (id) REFERENCES funcionarios(id),
@@ -78,6 +79,76 @@ CREATE TABLE quartos (
         semanas_gestacao INT NOT NULL
         );
 
-        
 
+        CADASTRO DE INFORMAÇÕES
+
+        tabela: funcionarios
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Alberto da Silva', '43', '15366633215', '4192465227');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Roberto da Luz', '36', '12246575922', '4116327314');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Leonardo Pereira', '28', '42683246674', '4142746163');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Matheus Oliveira', '35', '74618821585', '4173672725');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('José Almeida', '48', '37327582592', '4121527225');
+
+INSERT INTO funcionarios ( nome, idade, cpf, telefone)
+VALUES ('Ricardo Santos', '31', '37326485213', '4137247153');
+
+        tabela: quartos
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('1', '1', 'ocupado');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('2', '1', 'ocupado');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('3', '1', 'ocupado');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('4', '1', 'ocupado');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('5', '1', 'ocupado');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('6', '1', 'disponivel');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('7', '1', 'ocupado');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('8', '1', 'ocupado');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('9', '1', 'disponivel');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('10', '1', 'disponivel');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('12', '2', 'ocupado');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('13', '2', 'disponivel');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('14', '2', 'ocupado');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('15', '2', 'disponivel');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('16', '2', 'disponivel');
+
+INSERT INTO quartos (numero, bloco, status_quarto)
+VALUES ('17', '2', 'ocupado');
         
