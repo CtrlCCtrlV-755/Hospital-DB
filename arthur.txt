@@ -9,8 +9,7 @@
         diagnostico VARCHAR(1000) NOT NULL
         );
 
-
-        CREATE TABLE pronto_socorro(
+CREATE TABLE pronto_socorro(
         id INT AUTO_INCREMENT PRIMARY KEY,
         nome VARCHAR(100) NOT NULL,
         telefone VARCHAR(10) NOT NULL UNIQUE,
@@ -38,12 +37,6 @@ CREATE TABLE estacionamento (
         id INT AUTO_INCREMENT PRIMARY KEY,
         quantidade INT NOT NULL,
         status BOOLEAN DEFAULT 1
-        );
-
-CREATE TABLE filiais (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        status_hospitalares BOOLEAN DEFAULT 1,
-        telefone_hospital VARCHAR(10) NOT NULL
         );
 
 
@@ -101,7 +94,22 @@ VALUES ('José Almeida', '48', '37327582592', '4121527225');
 INSERT INTO funcionarios ( nome, idade, cpf, telefone)
 VALUES ('Ricardo Santos', '31', '37326485213', '4137247153');
 
+tabela: pacientes
 
+INSERT INTO pacientes (nome, idade, cpf, telefone, diagnostico)
+VALUES ('João Alberto', '45', '34948273527', '4192037194', 'gripe comun');
 
+INSERT INTO pacientes (nome, idade, cpf, telefone, diagnostico)
+VALUES ('Walter White', '52', '26375135152', '4195372937', 'cancer no pulmão, estágio 2')
+
+INSERT INTO pacientes (nome, idade, cpf, telefone, diagnostico)
+VALUES ('José da Silva', '34', '38319371382', '4138918379', 'infecção bacteriana');
+
+INSERT INTO pacientes (nome, idade, cpf, telefone, diagnostico)
+VALUES ('Marcos dos Santos', '29', '21910271037', '4183208292', 'alergia a picada de inseto');
+
+INSERT INTO pacientes (nome, idade, cpf, telefone, diagnostico)
+VALUES ('Amanda Fernandez', '31', '48204720528', '4197392582', 'corte no antebraço');
+        
 
         
